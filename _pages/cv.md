@@ -28,39 +28,39 @@ Data Structure (90), Pattern Recognition (96), Principles of Automatic Control (
 
 # 🔬 Research Experience
 * Nov. 2024 -- June. 2025: Research Assistant
-  * Project Name: Efficient Continual Learning for LLMs: A Parameter Sorting Approach to Mitigate Catastrophic Forgetting
+  * **Project**: Efficient Continual Learning for LLMs: A Parameter Sorting Approach to Mitigate Catastrophic Forgetting
     * Proposed a dynamic block-wise parameter sorting method that identifies and protects task-critical parameters during fine-tuning, effectively mitigating catastrophic forgetting in a continual learning setting for LLMs.
     * Dynamically updated a subset of parameters to preserve performance on previous tasks while improving training efficiency compared to existing methods.
   * Advisor: **Xiaolin Huang,** Professor, Vice Dean, Department of Automation, SJTU
     
-* July. 2024 -- May. 2025: Research Assistant
-  * Project Name: Fewer Generated Images for Better Augmentation
-    * Leveraged GLIDE text-to-image model with real guidance strategies to selectively diversify training datasets.
-    * Conducted experiments on multiple datasets and across multiple architectures using upsampling and Diffusion-based data augmentation techniques.
-    * Improved the classification accuracy by 1% than that without augmentation and training efficiency by 70% than 2x scale Diffusion-based data augmentation using selectively incorporating generated data.
-  * Advisor: **Baharan Mirzasoleiman,** Assistant Professor, Computer Science Department, UCLA
+* **July 2024 -- May 2025**: Research Assistant
+  * **Project**: Targeted Synthetic Image Augmentation via Diffusion Models
+    * Contributed to building a selective synthetic data augmentation framework based on GLIDE text-to-image model, which identifies "slow-learnable" examples early in training and augments only this targeted subset.
+    * Designed a faithful image generation pipeline that initializes the diffusion process from real samples to produce synthetic images that preserve semantic features while diversifying noise patterns.
+    * Conducted experiments across multiple architectures (ResNet, ViT, ConvNeXt, Swin) and datasets (CIFAR-10/100, TinyImageNet); augmenting only 30%--40% of training data achieves up to 2.8% accuracy gain, while reducing training overhead by 70% vs. 2× full-dataset diffusion augmentation.
+  * **Advisor**: Baharan Mirzasoleiman, Assistant Professor, Computer Science Department, UCLA
  
-* Mar. 2024 -- June. 2024: Co-author
-  * Project Name: Unified Gradient-Based Machine Unlearning (MU) with Remain Geometry Enhancement
-    * Proposed using KL divergence on the remaining output distribution, instead of Euclidean distance in vanilla methods, as the manifold metric to prevent deviations in the model output on the remaining set, improving MU performance.
-    * Conducted experiments and parameter tuning to compare the performance of our algorithm with other MU methods in image classification and generation across various datasets and models of different architectures.
-    * Improved the averaging disparity by 1.8% on average in random subset forgetting on CIFAR-10 in image classification and the FID by 80 on average in class-wish forgetting on ImageNet in image generation.
-  * Advisor: **Xiaolin Huang,** Professor, Vice Dean, Department of Automation, SJTU
+* **Mar 2024 -- June 2024**: Research Assistant
+  * **Project**: Unified Gradient-Based Machine Unlearning with Remain Geometry Enhancement
+    * Proposed replacing Euclidean distance with KL divergence on the remaining set as a retention constraint, better respecting the geometry of the output probability space and improving retained model performance during unlearning.
+    * Conducted experiments and hyperparameter tuning on image classification and generation tasks, with systematic comparison against multiple unlearning baselines.
+    * Achieved an average 1.8% disparity reduction on CIFAR-10 random-subset forgetting and an average FID improvement of 80 on ImageNet class-forgetting.
+  * **Advisor**: [Xiaolin Huang](http://www.pami.sjtu.edu.cn/xiaolin), Professor & Vice Dean, Department of Automation, SJTU
     
 * Feb. 2024 -- June 2024: Sole Researcher
-  * Project Name: Polyp Detection and Segmentation Augmented by Diffusion Model
+  * **Project**: Polyp Detection and Segmentation Augmented by Diffusion Model
     * Implemented yolov10 and ResUnet++ as baselines to finish object detection and segmentation on medical images.
     * Proposed using Diffusion-based generative models to generate synthetic data for data augmentation, which improved the mAP0.5@0.95 in the object detection by 1% and the IoU in the segmentation by 5%.
   * Advisor: **Manhua Liu,** Professor, Artificial Intelligence Research Institute, SJTU
 
 * Oct. 2023 – Mar. 2024: Group Member
-  * Project Name: Design of distributed collaborative positioning system
+  * **Project**: Design of distributed collaborative positioning system
     * Developed motor control code on the STM32 board to precisely manage the yaw and pitch of the camera platform, ensuring accurate angle adjustments.
     * Contributed to the mechanical design of the camera head and designed circuit boards to interface the STM32 board with multiple cameras.
   * Advisor: **Jianping He,** Associate Professor, Department of Automation, SJTU
 
 * Mar. 2023 – Feb. 2024: Project Leader
-  * Project Name: Implementation and comparison of gas tracing algorithms for dual robots in confined space
+  * **Project**: Implementation and comparison of gas tracing algorithms for dual robots in confined space
     * Proposed a bionics-based gas tracing algorithm for dual robots in a confined space and conducted experiments to simulate and validate our algorithm, which improved the success rate by 1.5% and the search efficiency by 9%. 
     * Developed control code for Raspberry Pi to ensure precise movement and implemented ROS2 communication protocols for real-time data exchange between the robots and the main computer.
   * Advisor: **Liufang Wang,** Senior Engineer, Student Innovation Center, SJTU
